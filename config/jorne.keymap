@@ -95,10 +95,10 @@
 //       |      | HD  | SD  | BD  | PD  | ER  |   |     |     |     |     |     |      |
 //                          |     | RGB |     |   |     | OUT |     |
                         bindings = <
-   &reset &bootloader  &rgb_ug RGB_HUI        &rgb_ug RGB_SAI        &rgb_ug RGB_BRI        &rgb_ug RGB_SPI        &rgb_ug RGB_EFF              &none        &none        &none        &none        &none         &bootloader &reset
-          &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
-          &none        &rgb_ug RGB_HUD        &rgb_ug RGB_SAD        &rgb_ug RGB_BRD        &rgb_ug RGB_SPD        &rgb_ug RGB_EFR              &none        &none        &none        &none        &none         &none
-                                                                    &trans &rgb_ug RGB_TOG &trans   &trans &out OUT_TOG &trans
+   &trans &kp PLUS  &trans       &trans        &trans        &trans        &trans              &none        &none        &none        &kp LBKT        &kp RBKT         &trans
+          &kp MINUS   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
+          &kp STAR        &rgb_ug RGB_HUD        &rgb_ug RGB_SAD        &rgb_ug RGB_BRD        &rgb_ug RGB_SPD        &rgb_ug RGB_EFR              &none        &none        &none        &kp LBRC        &kp RBRC         &none
+                                                                    &kp FSLH &kp EQUAL &kp DOT   &trans &trans &trans
                         >;
                 };
         };
