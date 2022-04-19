@@ -15,6 +15,7 @@
 #define RSE 2
 #define ADJ 3
 
+
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
