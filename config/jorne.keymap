@@ -50,27 +50,27 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
+// |  GUI |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
 //        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
 //        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
-//                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
+//                           | Alt | SPC | RSE |   | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
+   &kp LWIN &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
             &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-            &kp LALT  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+            &kp LSHIFT  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
+                         &kp LALT &lt LWR SPACE &lt RSE ESC &lt LWR RET &mt RSHFT BSPC &lt RSE DEL
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-//       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
-//       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
+// |     |  _  |  UP |Left |Down |Right|  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
+//       |  +  |  1  |  2  |  3  |  4  |  5  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
+//       |  =  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  6  |  7  |  8  |  9  |  0  |     |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5           &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12
-          &mt LCTRL PLUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
-          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
+   &trans &kp UNDER      &kp UP   &kp LEFT &kp DOWN   &kp Right   &kp F5           &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12
+          &mt LCTRL PLUS &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
+          &mt LALT EQUAL &kp F1   &kp F2 &kp F3   &kp F4   &kp F5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
                                               &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
                         >;
                 };
