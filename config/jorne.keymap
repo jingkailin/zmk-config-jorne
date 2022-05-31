@@ -16,7 +16,6 @@
 #define ADJ 3
 #define FN  4
 
-
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	/* Cannot be used together with i2c0. */
