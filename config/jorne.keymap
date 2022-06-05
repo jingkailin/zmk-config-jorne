@@ -51,7 +51,7 @@
 
                 default_layer {
                         bindings = <
-   &kp LCTRL &lt ADJ ESC         &kp Q &kp W &kp E &kp R &kp T      &kp Y  &kp U  &kp I  &kp O   &kp P    &kp DEL &kp ENTER
+   &kp LCTRL  &lt ADJ ESC         &kp Q &kp W &kp E &kp R &kp T      &kp Y  &kp U  &kp I  &kp O   &kp P    &kp DEL &lt ADJ ENTER
              &mt LCTRL TAB      &kp A &kp S &kp D &kp F &kp G         &kp H  &kp J  &kp K  &kp L   &kp SEMI &kp ENTER
              &mt LSHFT CLCK      &kp Z &kp X &kp C &kp V &kp B     &kp B  &kp N  &kp M  &kp COMMA &kp DOT &mt RSHIFT SLASH
                          &mt LALT LEFT &mt LGUI DOWN &kp SPACE             &lt LWR SPACE &mt RGUI UP &lt RSE RIGHT
@@ -86,7 +86,7 @@
 //       | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
 //                          |     | RGB |     |   |     | OUT |     |
                         bindings = <
-   &reset &none  &kp F1  &kp F2   &kp F3   &kp F4    &kp F5    &kp F6    &kp F7     &kp F8  &kp F9      &kp F10     &none &reset
+   &reset &none  &kp F1  &kp F2   &kp F3   &kp F4    &kp F5    &kp F6    &kp F7     &kp F8  &kp F9      &kp F10   &reset  &none 
           &none   &kp F11 &kp F12 &none &none &none       &none &kp LEFT &kp DOWN &kp UP &kp RIGHT  &none
           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4              &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
                                                                     &trans &rgb_ug RGB_TOG &trans   &trans &out OUT_TOG &trans
