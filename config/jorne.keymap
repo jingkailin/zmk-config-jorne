@@ -73,7 +73,7 @@
 //                          | ALT | GUI | SPACE |   | SPACE |     |     |
                         bindings = <
    &none  &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp C_VOL_UP &kp HOME &kp PG_UP  &kp LBKT &kp RBKT &kp BSLH &none
-          &kp LCTRL       &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp END  &kp PG_DN  &none    &kp SQT  &ENTER
+          &kp LCTRL       &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp END  &kp PG_DN  &none    &kp SQT  &kp ENTER
           &kp LSHIFT      &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT          &kp C_VOL_DN &kp DEL  &kp INS    &none    &none    &none
                                                            &kp LALT &kp LGUI &kp SPACE        &kp SPACE &none &none
                         >;
