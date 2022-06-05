@@ -72,21 +72,21 @@
 //       | SHIFT |  0  |  1  |  2  |  3  |  .  |   | VOLD| DEL | INS|   |     |     |
 //                          | ALT | GUI | SPACE |   | SPACE |     |     |
                         bindings = <
-   &none  &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp C_VOL_UP &kp HOME &kp PG_UP  &kp LBKT &kp RBKT &kp BSLH &none
-          &kp LCTRL       &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp END  &kp PG_DN  &none    &kp SQT  &ENTER
-          &kp LSHIFT      &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT          &kp C_VOL_DN &kp DEL  &kp INS    &none    &none    &none
-                                                           &kp LALT &kp LGUI &kp SPACE        &kp SPACE &none &none
+   &bootloader &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp C_VOL_UP &kp HOME &kp PSCRN &kp PG_UP &kp SLCK &kp CAPS &bootloader
+          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp LEFT &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
+          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT          &kp C_VOL_DN &kp END  &kp DOWN  &kp PG_DN &kp PAUSE_BREAK &trans
+                                                           &trans &trans &lt ADJ RET        &lt ADJ ESC &trans &trans
                         >;
                 };
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | RST |      | F1  | F2  | F3  | F4  | F5  |   |  F6 |  F7 | F8  |  F9 | F10 | RST |    |
+// | RST |      | F1  | F2  | F3  | F4  | F5  |   |  F6 |  F7 | F8  |  F9 | F10 |     | RST |
 //       | BLDR| F11 | F12 |     |     |     |   |     | LFT |  DN |  UP | RGT | BLDR|
 //       | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
 //                          |     | RGB |     |   |     | OUT |     |
                         bindings = <
    &reset &none  &kp F1  &kp F2   &kp F3   &kp F4    &kp F5    &kp F6    &kp F7     &kp F8  &kp F9      &kp F10   &reset   &none 
-          &bootloader   &kp F11 &kp F12 &none &none &none       &none &kp LEFT &kp DOWN &kp UP &kp RIGHT  &bootloader
+          &none   &kp F11 &kp F12 &none &none &none       &none &kp LEFT &kp DOWN &kp UP &kp RIGHT  &none
           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4              &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
                                                                     &trans &rgb_ug RGB_TOG &trans   &trans &out OUT_TOG &trans
                         >;
