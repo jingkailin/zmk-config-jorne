@@ -14,7 +14,6 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
-#define FN  4
 
 &spi1 {
 	compatible = "nordic,nrf-spim";
