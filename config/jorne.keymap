@@ -51,7 +51,7 @@
 
                 default_layer {
                         bindings = <
-   &kp LCTRL &lt ADJ ESC         &kp Q &kp W &kp E &kp R &kp T      &kp Y  &kp U  &kp I  &kp O   &kp P    &kp LBKT &kp ENTER
+   &kp LCTRL &lt ADJ ESC         &kp Q &kp W &kp E &kp R &kp T      &kp Y  &kp U  &kp I  &kp O   &kp P    &kp DEL &kp ENTER
              &mt LCTRL TAB      &kp A &kp S &kp D &kp F &kp G         &kp H  &kp J  &kp K  &kp L   &kp SEMI &kp ENTER
              &mt LSHFT CLCK      &kp Z &kp X &kp C &kp V &kp B     &kp B  &kp N  &kp M  &kp COMMA &kp DOT &mt RSHIFT SLASH
                          &mt LALT LEFT &mt LGUI DOWN &kp SPACE             &lt LWR SPACE &mt RGUI UP &lt RSE RIGHT
@@ -68,10 +68,10 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
-//       | CTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | APP |
-//       |      |  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS|     |
-//                          |     |     | ADJ |   | ADJ |     |     |
+// | BLDR | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PGUP|LBKT|RBKT |BSLH | BLDR |
+//       | CTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | END|  PGDN |    | SQT | ENTER |
+//       | SHIFT |  0  |  1  |  2  |  3  |  .  |   | VOLD| DEL | INS|   |     |     |
+//                          | ALT | GUI | SPACE |   | SPACE |     |     |
                         bindings = <
    &bootloader &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp C_VOL_UP &kp HOME &kp PSCRN &kp PG_UP &kp SLCK &kp CAPS &bootloader
           &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp LEFT &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
